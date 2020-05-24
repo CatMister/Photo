@@ -23,3 +23,12 @@ C:\Task\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfoInputs.
 C:\Task\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfo.cs
 C:\Task\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.dll
 C:\Task\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\bin\Debug\netstandard2.0\SqlSugar.deps.json
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\bin\Debug\netstandard2.0\SqlSugar.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\bin\Debug\netstandard2.0\SqlSugar.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.pdb

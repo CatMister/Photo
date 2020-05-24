@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj": {}
+    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj": {}
   },
   "projects": {
-    "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
+    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
         "projectName": "HuxingEntity",
-        "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
-        "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-        "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingEntity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\小武\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -32,11 +27,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
-                "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj"
+              "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj"
               },
-              "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
-                "projectPath": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj"
+              "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj"
               }
             }
           }
@@ -67,27 +62,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
+    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
         "projectName": "HuxingModel",
-        "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
-        "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-        "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\小武\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -127,27 +117,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj": {
+    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj",
         "projectName": "HuxingService",
-        "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj",
-        "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-        "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingService\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\小武\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -159,8 +144,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
-                "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj"
+              "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj"
               }
             }
           }
@@ -199,27 +184,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
+    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
       "version": "4.9.9.10",
       "restore": {
-        "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
         "projectName": "SqlSugar",
-        "projectPath": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
-        "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-        "outputPath": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\obj\\",
+        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\SqlSugar\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\小武\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -291,7 +271,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

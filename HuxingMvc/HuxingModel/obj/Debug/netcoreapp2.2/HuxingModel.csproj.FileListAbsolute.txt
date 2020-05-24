@@ -34,3 +34,11 @@ C:\Task\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.AssemblyInfoIn
 C:\Task\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.AssemblyInfo.cs
 C:\Task\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.dll
 C:\Task\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\bin\Debug\netcoreapp2.2\HuxingModel.deps.json
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\bin\Debug\netcoreapp2.2\HuxingModel.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\bin\Debug\netcoreapp2.2\HuxingModel.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingModel\obj\Debug\netcoreapp2.2\HuxingModel.pdb

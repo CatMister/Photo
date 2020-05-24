@@ -58,3 +58,17 @@ C:\Task\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.AssemblyInfo
 C:\Task\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.csproj.CopyComplete
 C:\Task\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.dll
 C:\Task\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\HuxingEntity.deps.json
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\HuxingEntity.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\HuxingEntity.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\HuxingModel.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\SqlSugar.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\HuxingModel.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\bin\Debug\netcoreapp2.2\SqlSugar.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingEntity\obj\Debug\netcoreapp2.2\HuxingEntity.pdb

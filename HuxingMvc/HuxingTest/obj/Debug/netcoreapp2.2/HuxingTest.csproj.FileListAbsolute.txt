@@ -1,0 +1,8 @@
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\bin\Debug\netcoreapp2.2\HuxingTest.deps.json
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\bin\Debug\netcoreapp2.2\HuxingTest.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\bin\Debug\netcoreapp2.2\HuxingTest.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\obj\Debug\netcoreapp2.2\HuxingTest.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\obj\Debug\netcoreapp2.2\HuxingTest.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\obj\Debug\netcoreapp2.2\HuxingTest.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\obj\Debug\netcoreapp2.2\HuxingTest.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTest\obj\Debug\netcoreapp2.2\HuxingTest.pdb

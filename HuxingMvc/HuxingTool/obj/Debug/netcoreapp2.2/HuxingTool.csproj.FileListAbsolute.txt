@@ -4,3 +4,15 @@ D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csprojAssembly
 D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csproj.CoreCompileInputs.cache
 D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.AssemblyInfoInputs.cache
 D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\HuxingTool.deps.json
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\HuxingTool.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\HuxingTool.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\SqlSugar.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\SqlSugar.pdb
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csprojAssemblyReference.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.AssemblyInfoInputs.cache
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.AssemblyInfo.cs
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csproj.CopyComplete
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.dll
+C:\Users\Administrator\Source\Repos\CatMister\Photo\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.pdb
