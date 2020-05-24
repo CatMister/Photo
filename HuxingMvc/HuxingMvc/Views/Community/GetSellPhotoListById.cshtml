@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+@model List<HuxingModel.Transaction.SellPhotoModel>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/iconfont/iconfont.css">
+    <link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+</head>
+<body>
+    <div style="width: 610px;height: 400px;text-align: center;">
+
+        @foreach (var item in Model)
+        {
+
+            <div style="width:200px;height:120px;margin-left:5px;margin-bottom:5px; float:left">
+                <img src="@item.Url" width="100px" height="100px" alt=""><br>
+                <a href="@item.Url" download="@item.Url">
+                    下载
+                </a>
+            </div>
+
+
+        }
+    </div>
+
+</body>
+</html>

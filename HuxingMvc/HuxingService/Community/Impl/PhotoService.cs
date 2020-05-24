@@ -88,7 +88,7 @@ namespace HuxingService.Community.Impl
             var result = new List<PhotoModel>();
             var total = 0;
             var entityList = DbContext.Queryable<PhotoEntity>()
-                .WhereIF(input.IsMyself, c => c.UserId == userId)
+                .WhereIF(input.IsMyself&&userId==0, c => c.UserId == userId)
                 .Select(c => new PhotoModel()
                 {
                     Name = c.Name,

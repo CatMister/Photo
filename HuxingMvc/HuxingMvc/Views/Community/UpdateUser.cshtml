@@ -6,11 +6,9 @@
 <link rel="stylesheet" href="~/iconfont/iconfont.css">
 <link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
 <style>
-    #filePicker input
-			{
-				display: none;
-			}
-
+    #filePicker input {
+        display: none;
+    }
 </style>
 @model HuxingModel.User.UserModel
 <div style="background-color: rgb(246,246,246)">
@@ -37,13 +35,13 @@
                 <img style="width:100px" id="headUrl" src="/photo/defaultHead.jpg" alt="..." class="img-thumbnail HeadUrl">
             }
             <div class="input-group">
-                <a class="btn btn-default"   id="filePicker" role="button">更新头像</a>
+                <a class="btn btn-default" id="filePicker" role="button">更新头像</a>
                 <input name="HeadUrl" type='hidden' id="filetwo" />
             </div>
             <label class="radio-inline">
                 @if (Model.Six)
                 {
-                    <input type="radio" name="Six" value="true"  checked="checked"><span>男</span>
+                    <input type="radio" name="Six" value="true" checked="checked"><span>男</span>
                 }
                 else
                 {
@@ -54,13 +52,19 @@
             <label class="radio-inline">
                 @if (!Model.Six)
                 {
-                    <input type="radio" name="Six" value="false"  checked="checked"><span>女</span>
+                    <input type="radio" name="Six" value="false" checked="checked"><span>女</span>
                 }
                 else
                 {
                     <input type="radio" name="Six" value="false"><span>女</span>
                 }
             </label><br>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">个人简介：</label>
+                <input type="text" class="form-control" id="Description" name="Description" value="@Model.Description">
+            </div>
+
             <button type="submit" class="btn btn-default">保存</button>
         </form>
 

@@ -43,6 +43,7 @@ namespace HuxingMvc.Contorller
         }
 
 
+
         #region  单页面
         public IActionResult AddPhotoUrl()
         {

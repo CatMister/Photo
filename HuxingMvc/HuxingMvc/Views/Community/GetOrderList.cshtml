@@ -4,6 +4,21 @@
     Layout = "~/Views/Shared/Community.cshtml";
 }
 @model IEnumerable<HuxingModel.Community.OrderModel>
+    <script src="~/layer/layer.js" charset="utf-8"></script>
+<script>
+    function add(url) {
+        layer.open({
+            type: 2,
+            title: '添加图片',
+            shadeClose: true,
+            shade: 0.3,
+            offset: "20%",
+            shadeClose: false,
+            area: ['600px', '400px'],
+            content: url
+        });
+    }
+</script>
 <div>
     <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
         <span style="margin-left: 10px;font-size: 15px;">订单列表</span>
@@ -11,7 +26,7 @@
             <a href="javascript:location.replace(location.href);"><i class="iconfont">&#xe607</i></a>
         </span>
     </div>
-    <table class="layui-table" style="width: 800px;margin-left: 20px;margin-top: 20px;">
+    <table class="table table-bordered" style="width: 800px;margin-left: 20px;margin-top: 20px;">
         <colgroup>
             <col width="150">
             <col width="200">
@@ -45,12 +60,12 @@
                     @if (item.OrdersType == 1)
                     {
                         <td>图片</td>
-                        <td><buttton onclick="add('GetSellPhotoListById?id=@item.PhotoOrAtlasId&IsAtlasId=false')">图片地址</buttton></td>
+                        <td><buttton class="btn btn-default"   onclick="add('GetSellPhotoListById?id=@item.PhotoOrAtlasId&IsAtlasId=false')">图片地址</buttton></td>
                     }
                     else
                     {
                         <td>图集</td>
-                        <td><buttton onclick="add('GetSellPhotoListById?id=@item.PhotoOrAtlasId&IsAtlasId=true')">图集地址</buttton></td>
+                        <td><buttton class="btn btn-default"  onclick="add('GetSellPhotoListById?id=@item.PhotoOrAtlasId&IsAtlasId=true')">图集地址</buttton></td>
 
                     }
                 </tr>
