@@ -8,6 +8,21 @@
 <link rel="stylesheet" href="~/iconfont/iconfont.css">
 <link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
 
+<script>
+    function UpdateGoodDynainic() {
+        $.ajax({
+            type: "POST",
+            url: "/Community/UpdateGoodDynainic",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify({ 'IsGood': true }),
+            success: function (jsonResult) {
+                alert("点赞成功！");
+            }
+        });
+        console.log("失败");
+    }
+</script>
 
 <div style="background-color: rgb(246,246,246)">
     <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
@@ -60,8 +75,8 @@
                 <img src="@item.Url" style="width:200px" alt="">
             }
         </div>
-        <div class="dongtai-caozuo">
-            <span class="span1"><i class="iconfont" style="color: red">&#xe505;</i> @item.GoodNum</span>
+        <div class="dongtai-caozuo" onclick="UpdateGoodDynainic()">
+            <span class="span1" ><i class="iconfont" style="color: red">&#xe505;</i> @item.GoodNum</span>
             <span><i class="iconfont" style="color: red">&#xe61e;</i>@item.ViewingNum</span>
         </div>
         <div style="width: 90%;margin-top: 10px; margin-left: 40px;float: left;border: 1px solid rgb(211,211,211)">
@@ -90,14 +105,6 @@
             </div>
         }
 
-
-        <form action="AddReply">
-            <div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
-                <input name="Content" type="text" style="width:400px;height: 40px;">
-                <input name="ReplyId" value="1" type="hidden" />
-                <input type="submit" style="width:70px;height: 40px;" value="发表">
-            </div>
-        </form>
 
         <form action="AddReply">
             <div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
