@@ -11,7 +11,7 @@
 
 <div style="background-color: rgb(246,246,246)">
     <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
-        <span style="margin-left:10px;font-size:  15px;">个人简介</span>
+        <span style="margin-left:10px;font-size:  15px;">动态</span>
     </div>
     <div class="dynamicList-main">
         <div width="fabiao" style="float: left;margin-top: 10px;">
@@ -31,76 +31,83 @@
         </div>
         @foreach (var item in Model.DateList)
         {
-            <div class="dongtai">
+    <div class="dongtai">
 
-                <div class="dongtai-header-img">
+        <div class="dongtai-header-img">
+            @if (string.IsNullOrEmpty(item.HeadUrl))
+            {
+                <img src="~/photo/111.jpg" alt="">
+            }
+            else
+            {
+                <img src="@item.HeadUrl" alt="">
+            }
+
+        </div>
+        <div class="dongtai-information">
+            <div style=" position:absolute; ">
+                <span>@item.UserName</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>@item.CreateTime.ToString("yyyy-MM-dd HH:mm:ss")</span>
+            </div>
+        </div>
+        <div class="dongtai-content">
+            <span>
+                @item.Context
+            </span>
+            @if (!string.IsNullOrEmpty(item.Url))
+            {
+                <br />
+                <img src="@item.Url" style="width:200px" alt="">
+            }
+        </div>
+        <div class="dongtai-caozuo">
+            <span class="span1"><i class="iconfont" style="color: red">&#xe505;</i> @item.GoodNum</span>
+            <span><i class="iconfont" style="color: red">&#xe61e;</i>@item.ViewingNum</span>
+        </div>
+        <div style="width: 90%;margin-top: 10px; margin-left: 40px;float: left;border: 1px solid rgb(211,211,211)">
+
+        </div>
+        @foreach (var models in item.ReplyList)
+        {
+            <div class="pinglun" style="float: left;margin-top: 10px;margin-bottom: 10px;">
+                <div style="width: 50px;height: 50px;margin-left: 50px;margin-top: 20px;float: left;">
+
                     @if (string.IsNullOrEmpty(item.HeadUrl))
                     {
-                        <img src="~/photo/111.jpg" alt="">
+                        <img src="~/photo/111.jpg" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
                     }
                     else
                     {
-                        <img src="@item.HeadUrl" alt="">
-                    }
-
-                </div>
-                <div class="dongtai-information">
-                    <div style=" position:absolute; ">
-                        <span>@item.UserName</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span>@item.CreateTime.ToString("yyyy-MM-dd HH:mm:ss")</span>
-                    </div>
-                </div>
-                <div class="dongtai-content">
-                    <span>
-                        @item.Context
-                    </span>
-                    @if (!string.IsNullOrEmpty(item.Url))
-                    {
-                        <br />
-                        <img src="@item.Url" style="width:200px" alt="">
+                        <img src="@models.HeadUrl" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
                     }
                 </div>
-                <div class="dongtai-caozuo">
-                    <span class="span1"><i class="iconfont" style="color: red">&#xe505;</i> @item.GoodNum</span>
-                    <span><i class="iconfont" style="color: red">&#xe61e;</i>@item.ViewingNum</span>
+                <div style="width:650px;float: left;margin-top: 20px;margin-left: 15px;font-size: 14px;">
+                    <span style="margin: 3px;">名字：@models.NickName</span>
+                    <span style="margin: 3px;">评论内容:@models.Content</span><br>
+                    <span style="margin: 3px;">@models.CreateTime.ToString("yyyy-MM-dd HH:mm:ss")</span>
                 </div>
-                <div style="width: 90%;margin-top: 10px; margin-left: 40px;float: left;border: 1px solid rgb(211,211,211)">
-
-                </div>
-                @foreach (var models in item.ReplyList)
-                {
-                    <div class="pinglun" style="float: left;margin-top: 10px;margin-bottom: 10px;">
-                        <div style="width: 50px;height: 50px;margin-left: 50px;margin-top: 20px;float: left;">
-
-                            @if (string.IsNullOrEmpty(item.HeadUrl))
-                            {
-                                <img src="~/photo/111.jpg" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
-                            }
-                            else
-                            {
-                                <img src="@models.HeadUrl" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
-                            }
-                        </div>
-                        <div style="width:650px;float: left;margin-top: 20px;margin-left: 15px;font-size: 14px;">
-                            <span style="margin: 3px;">名字：@models.NickName</span>
-                            <span style="margin: 3px;">评论内容:@models.Content</span><br>
-                            <span style="margin: 3px;">@models.CreateTime.ToString("yyyy-MM-dd HH:mm:ss")</span>
-                        </div>
-
-                    </div>
-                }
-
-
-                <form action="AddReply">
-                    <div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
-                        <input name="Content" type="text" style="width:400px;height: 40px;">
-                        <input name="ReplyId" value="1" type="hidden" />
-                        <input type="submit" style="width:70px;height: 40px;" value="发表">
-                    </div>
-                </form>
-
 
             </div>
+        }
+
+
+        <form action="AddReply">
+            <div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
+                <input name="Content" type="text" style="width:400px;height: 40px;">
+                <input name="ReplyId" value="1" type="hidden" />
+                <input type="submit" style="width:70px;height: 40px;" value="发表">
+            </div>
+        </form>
+
+        <form action="AddReply">
+            <div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
+                <input name="Content" type="text" style="width:400px;height: 40px;">
+                <input name="ReplyId" value="1" type="hidden" />
+                <input type="submit" style="width:70px;height: 40px;" value="发表">
+            </div>
+        </form>
+
+    </div>
 
         }
     </div>
