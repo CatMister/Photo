@@ -284,3 +284,7 @@ C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\HuxingMvc.Views.pdb
 C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\HuxingMvc.csproj.CopyComplete
 C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\HuxingMvc.dll
 C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\HuxingMvc.pdb
+C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\Razor\Views\Shared\OutMain.cshtml.g.cs
+C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\Razor\Views\Community\NewList.cshtml.g.cs
+C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\Razor\Views\Community\PhotoList.cshtml.g.cs
+C:\Task\Photo\HuxingMvc\HuxingMvc\obj\Debug\netcoreapp2.2\Razor\Views\Community\GetSellPhotoListById.cshtml.g.cs

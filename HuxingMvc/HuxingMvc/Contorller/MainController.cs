@@ -21,12 +21,7 @@ namespace HuxingMvc.Contorller
                     var userId = HttpContext.User.Claims.First().Value;
                     return Convert.ToInt64(userId);
                 }
-                else
-                {
-                    //todo： 添加需要跳转的异常
-                    throw new Exception();
-
-                }
+                return 0;
             }
         }
 
@@ -51,7 +46,7 @@ namespace HuxingMvc.Contorller
                 HttpContext.Response.ContentType = "text/html;charset=utf-8";
                 await HttpContext.Response.WriteAsync($"<script>self.location=document.referrer;</script>");
             }).Wait();
-         
+
         }
 
         /// <summary>

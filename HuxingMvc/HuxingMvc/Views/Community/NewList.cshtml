@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/OutMain.cshtml";
+}
+
+@model HuxingModel.PageReturnModel<HuxingModel.Community.NewsModel>
+@foreach (var item in Model.DateList)
+{
+    <div id="gallery-wrapper">
+        <div class="white-panel">
+            <img src="@item.Url" class="thumb">
+
+            <h1><a href="#">@item.Titie</a></h1>
+            <p>@item.Summary</p>
+        </div>
+    </div>
+}
+
+
+
