@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Task\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {}
+    "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {}
   },
   "projects": {
-    "C:\\Task\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
+    "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
       "version": "4.9.9.10",
       "restore": {
-        "projectUniqueName": "C:\\Task\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
+        "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
         "projectName": "SqlSugar",
-        "projectPath": "C:\\Task\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
+        "projectPath": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj",
         "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-        "outputPath": "C:\\Task\\HuxingMvc\\SqlSugar\\obj\\",
+        "outputPath": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

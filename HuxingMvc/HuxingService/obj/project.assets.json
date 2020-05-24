@@ -5287,11 +5287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Task\\HuxingMvc\\HuxingService\\HuxingService.csproj",
+      "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj",
       "projectName": "HuxingService",
-      "projectPath": "C:\\Task\\HuxingMvc\\HuxingService\\HuxingService.csproj",
+      "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj",
       "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-      "outputPath": "C:\\Task\\HuxingMvc\\HuxingService\\obj\\",
+      "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5312,8 +5312,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Task\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
-              "projectPath": "C:\\Task\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj"
+            "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
+              "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj"
             }
           }
         }

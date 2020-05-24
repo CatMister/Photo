@@ -734,11 +734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Task\\HuxingMvc\\HuxingTool\\HuxingTool.csproj",
+      "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingTool\\HuxingTool.csproj",
       "projectName": "HuxingTool",
-      "projectPath": "C:\\Task\\HuxingMvc\\HuxingTool\\HuxingTool.csproj",
+      "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingTool\\HuxingTool.csproj",
       "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-      "outputPath": "C:\\Task\\HuxingMvc\\HuxingTool\\obj\\",
+      "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingTool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

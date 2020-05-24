@@ -13768,11 +13768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Task\\HuxingMvc\\HuxingMvc\\HuxingMvc.csproj",
+      "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingMvc\\HuxingMvc.csproj",
       "projectName": "HuxingMvc",
-      "projectPath": "C:\\Task\\HuxingMvc\\HuxingMvc\\HuxingMvc.csproj",
+      "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingMvc\\HuxingMvc.csproj",
       "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-      "outputPath": "C:\\Task\\HuxingMvc\\HuxingMvc\\obj\\",
+      "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -13793,14 +13793,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Task\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
-              "projectPath": "C:\\Task\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj"
+            "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj": {
+              "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj"
             },
-            "C:\\Task\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
-              "projectPath": "C:\\Task\\HuxingMvc\\HuxingModel\\HuxingModel.csproj"
+            "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
+              "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj"
             },
-            "C:\\Task\\HuxingMvc\\HuxingService\\HuxingService.csproj": {
-              "projectPath": "C:\\Task\\HuxingMvc\\HuxingService\\HuxingService.csproj"
+            "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj": {
+              "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingService\\HuxingService.csproj"
             }
           }
         }

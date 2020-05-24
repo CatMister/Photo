@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Task\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
+      "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
       "projectName": "HuxingModel",
-      "projectPath": "C:\\Task\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
+      "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
       "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-      "outputPath": "C:\\Task\\HuxingMvc\\HuxingModel\\obj\\",
+      "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

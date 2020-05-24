@@ -4712,11 +4712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Task\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
+      "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
       "projectName": "HuxingEntity",
-      "projectPath": "C:\\Task\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
+      "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\HuxingEntity.csproj",
       "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
-      "outputPath": "C:\\Task\\HuxingMvc\\HuxingEntity\\obj\\",
+      "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingEntity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -4737,11 +4737,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Task\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
-              "projectPath": "C:\\Task\\HuxingMvc\\HuxingModel\\HuxingModel.csproj"
+            "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
+              "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj"
             },
-            "C:\\Task\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
-              "projectPath": "C:\\Task\\HuxingMvc\\SqlSugar\\SqlSugar.csproj"
+            "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj": {
+              "projectPath": "C:\\Task\\Photo\\HuxingMvc\\SqlSugar\\SqlSugar.csproj"
             }
           }
         }
