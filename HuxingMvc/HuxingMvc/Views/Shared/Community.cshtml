@@ -1,0 +1,83 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/css.css">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="~/css/Photo/js/jquery-1.11.0.min.js"></script>
+
+    <style>
+        body {
+            background-color: rgb(246,246,246);
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部代码 -->
+    <div class="nav">
+        <div class="icon">
+            <a href="/Community/PhotoList" target="_self">图图交易</a>
+            <!-- <a href="图片链接">图图交易</a> -->
+        </div>
+        <div id="unlongin" class="login-register">
+            <div class="lr">
+                <a href="/login">登录</a>
+            </div>
+            <div class="lr">
+                <a href="/login">注册</a>
+            </div>
+        </div>
+
+        <div id="login" class="login-register" style="display:none">
+            <span id="userName" class="lr" style="color:white">
+                xiao
+            </span>
+            <div class="lr">
+                <a href="/login/SignInAsync">注销</a>
+            </div>
+        </div>
+    </div>
+    <div class="mid">
+        <div class="left">
+            <a href="./Selfintroduce" target="show" class="first-a">个人简介</a>
+            <a href="./GetUser" target="show">关注用户</a>
+            <a href="./GetDynamicList" target="show">动态</a>
+            <a href="./GetNewsList" target="show">图文</a>
+            <a href="./GetPhoto" target="show">图片</a>
+            <a href="./GetSellPhotoList" target="show">图片交易</a>
+            <a href="./GetSellAtlasList" target="show">图集交易</a>
+            <a href="./GetOrderList" target="show">订单列表</a>
+        </div>
+        <div class="right">
+             @RenderBody()
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            @if ((string)ViewData["Title"] == "图片列表")
+            {
+                <text>Sorting();</text>
+            }
+
+            $.ajax({
+            type: "POST",
+                url: "/Login/GetUserDetail",
+                contentType: "application/json",
+                dataType: "json",
+                success: function (jsonResult) {
+
+                    console.log(jsonResult.nickName);
+                    $("#userName").text(jsonResult.nickName);
+                    $('#unlongin').css('display', 'none');
+                    $('#login').css('display', 'normal');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

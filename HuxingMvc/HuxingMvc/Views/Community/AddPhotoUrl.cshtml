@@ -1,0 +1,55 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>交易图片上传</title>
+    <style>
+        input[type=text] {
+            width: 200px;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            height: 35px;
+            outline: none;
+            border-radius: 4%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Community/AddPhoto" method="post" enctype="multipart/form-data">
+        <table align="center">
+            <tr>
+                <td>标题：</td>
+                <td><input type="text" name="Name" placeholder="图片标题"></td>
+            </tr>
+            <tr>
+                <td>描述：</td>
+                <td><input type="text" name="detail" placeholder="图片描述" /></td>
+            </tr>
+            <tr>
+                <td>图片：</td>
+                <td><input type="file" name="file" /></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="submit" value="提交" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HuxingModel\HuxingModel.csproj" />
+    <ProjectReference Include="..\SqlSugar\SqlSugar.csproj" />
+  </ItemGroup>
+
+</Project>

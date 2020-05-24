@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态</title>
+	<link rel="stylesheet" href="./css.css">
+	<link rel="stylesheet" href="./iconfont/iconfont.css">
+	<link rel="stylesheet" href="./iconfont2/iconfont.css">
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(246,246,246);">
+	<div width="fabiao" style="float: left;margin-left: 100px;margin-top: 100px;">
+		<div style="border:1px solid rgb(211,211,211);height: 110px;" >
+			<form class="bs-example bs-example-form" role="form">
+				<div class="input-group">
+					<input type="text" class="form-control input-lg" style="width:520px; height:70px;">
+					<div id="filePicker"><i class="iconfont" style="font-size: 30px;">&#xe64e</i></div>
+					<!-- <span  class="input-group-addon" style="width:50px;"><i class="iconfont">&#xe64e</i></span> -->
+
+					<input type="hidden" >
+				</div>
+				<!-- <span id="filePicker">1</span> -->
+				<button type="button"style="height: 40px; width: 50px; float: right; margin-right: 0px;margin-top: -42px;">发布</button>
+			</form>
+		</div>
+		<!-- 添加图片 -->
+		<!-- <div style="margin-top: 25px;">
+			<img src="./111.jpg" alt="" width="200px" height="200px;">
+			<img src="./111.jpg" alt="" width="200px" height="200px;">
+		</div> -->
+		
+	</div>
+
+	<div class="dongtai">
+		<!-- <div class="fabu">
+			<input type="text" class="shuru" placeholder="你想说的">
+			<input type="button" value="发布">
+		</div> -->
+		<div class="dongtai-header-img">
+			<img src="./111.jpg" alt="">
+		</div>
+		<div class="dongtai-information">
+			<span>尤雨溪</span>
+		</div>
+		<div class="dongtai-content">
+			<span>
+				不管你们学不学得会，反正我Vue3.0就要发了
+			</span>
+		</div>
+		<div class="dongtai-caozuo">
+			<span class="span1"><i class="iconfont" style="color: red">&#xe505;</i>点赞</span>
+			<span><i class="iconfont" style="color: red">&#xe61e;</i>踩一下</span>
+		</div>
+		<div style="width: 90%;margin-top: 10px; margin-left: 40px;float: left;border: 1px solid rgb(211,211,211)">
+			
+		</div>
+		<div class="pinglun" style="float: left;margin-top: 10px;margin-bottom: 10px;">
+			<div style="width: 50px;height: 50px;margin-left: 50px;margin-top: 20px;float: left;">
+				<img src="./111.jpg" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
+			</div>
+			<div style="width:650px;float: left;margin-top: 20px;margin-left: 15px;font-size: 14px;">
+				<span style="margin: 3px;">名字：</span>
+				<span style="margin: 3px;">评论内容</span><br>
+				<span style="margin: 3px;">时间</span>
+			</div>
+
+		</div>
+		<div class="pinglun" style="float: left;margin-top: 10px;margin-bottom: 10px;">
+			<div style="width: 50px;height: 50px;margin-left: 50px;margin-top: 20px;float: left;">
+				<img src="./111.jpg" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
+			</div>
+			<div style="width:650px;float: left;margin-top: 20px;margin-left: 15px;font-size: 14px;">
+				<span style="margin: 3px;">名字：</span>
+				<span style="margin: 3px;">评论内容</span><br>
+				<span style="margin: 3px;">时间</span>
+			</div>
+			
+		</div>
+		<div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
+			<input type="text" style="width:400px;height: 40px;">
+			<input type="button" style="width:70px;height: 40px;" value="发表">
+		</div>
+	</div>
+
+	<div class="dongtai">
+		<!-- <div class="fabu">
+			<input type="text" class="shuru" placeholder="你想说的">
+			<input type="button" value="发布">
+		</div> -->
+		<div class="dongtai-header-img">
+			<img src="./111.jpg" alt="">
+		</div>
+		<div class="dongtai-information">
+			<span>尤雨溪</span>
+		</div>
+		<div class="dongtai-content">
+			<span>
+				不管你们学不学得会，反正我Vue3.0就要发了
+			</span>
+		</div>
+		<div class="dongtai-caozuo">
+			<span class="span1"><i class="iconfont" style="color: red">&#xe505;</i>点赞</span>
+			<span><i class="iconfont" style="color: red">&#xe61e;</i>踩一下</span>
+		</div>
+		<div style="width: 90%;margin-top: 10px; margin-left: 40px;float: left;border: 1px solid rgb(211,211,211)">
+			
+		</div>
+		<div class="pinglun" style="float: left;margin-top: 10px;margin-bottom: 10px;">
+			<div style="width: 50px;height: 50px;margin-left: 50px;margin-top: 20px;float: left;">
+				<img src="./111.jpg" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
+			</div>
+			<div style="width:650px;float: left;margin-top: 20px;margin-left: 15px;font-size: 14px;">
+				<span style="margin: 3px;">名字：</span>
+				<span style="margin: 3px;">评论内容</span><br>
+				<span style="margin: 3px;">时间</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./webuploader/0.1.5/webuploader.min.js"></script>
+	<script type="text/javascript">
+		var uploader = WebUploader.create({
+			//选择文件后，立即上传
+			auto: true,
+			//引入一个插件文件
+			swf: './webuploader/0.1.5/Uploader.swf',
+
+			// 用于处理上传文件的页面。
+			server: "/admin/goods/upimage",
+
+			// 选择文件的按钮。可选。
+			// 把id=filePicker 元素制作成上传按钮
+			pick: '#filePicker',
+
+			// 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+			resize: false,
+			// 只允许选择图片文件。
+			accept: {
+				title: 'Images',
+				extensions: 'gif,jpg,jpeg,bmp,png',
+				mimeTypes: 'image/*'
+			}
+		});
+
+		//用于上传成功后，处理操作；
+		uploader.on( 'uploadSuccess', function( file,data ) {
+			//data数据就是服务器端返回的json数据
+			//alert(data.goods_ori);fileList
+			//创建一个img标签
+			var imgs = "<img width='150' src='/uploads/goods/"+data.goods_thumb+"'/>";
+			$("#fileList").html(imgs);//把img图片嵌入到 div里面；
+			// $("#goods_ori").val(data.goods_ori);
+			// $("#goods_img").val(data.goods_img);
+			// $("#goods_thumb").val(data.goods_thumb);
+			layer.msg('上传完成',{icon:6,time:1000});
+		});
+	</script>
+</body>
+</html>

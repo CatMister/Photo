@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "关注用户";
+    Layout = "~/Views/Shared/Community.cshtml";
+}
+@model List<HuxingModel.User.UserModel>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<Div>
+    <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
+        <span style="margin-left: 10px;font-size: 15px;">关注用户列表</span>
+    </div>
+    <table class="layui-table" style="width: 800px;margin-left: 20px;margin-top: 20px;">
+        <colgroup>
+            <col width="150">
+            <col width="200">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>头像</th>
+                <th>昵称</th>
+                <th>性别</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @if (string.IsNullOrEmpty(item.HeadUrl))
+                    {
+
+                        <td><img src="~/photo/111.jpg" height="50px"></td>
+                    }
+                    else
+                    {
+
+                        <td><img src="@item.HeadUrl" height="200px"></td>
+                    }
+                    <td>@item.NickName</td>
+                    @if (string.IsNullOrEmpty(item.HeadUrl))
+                    {
+
+                        <td>男</td>
+                    }
+                    else
+                    {
+
+                        <td>女</td>
+                    }
+                    <td><a href="javascript:void(0)" onclick="del(this,@item.Id)">取消关注</a></td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</Div>
+
+
+
+

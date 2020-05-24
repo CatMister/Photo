@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "售卖图片列表";
+    Layout = "~/Views/Shared/Community.cshtml";
+}
+@model HuxingModel.PageReturnModel<HuxingModel.Transaction.SellAtlasModel>
+
+
+
+
+<script src="~/layer/layer.js" charset="utf-8"></script>
+
+<link rel="stylesheet" href="~/iconfont/iconfont.css">
+<link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+<style>
+    .add-btn {
+        position: absolute;
+        width: 113px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        background-color: rgb(52,54,58);
+        color: #fff;
+        outline: none;
+        margin-top: 10px;
+    }
+</style>
+<script>
+    function add() {
+        layer.open({
+            type: 2,
+            title: '添加图集交易',
+            shadeClose: true,
+            shade: 0.3,
+            offset: "20%",
+            shadeClose: false,
+            area: ['600px', '300px'],
+            content: 'AddSellAtlasUrl'//传入一个链接地址 比如：http://www.baidu.com
+        });
+    }
+    function BuyPhoto(PhotoOrAtlasId, OrdersType, Price, SellerId) {
+
+        $.ajax({
+            type: "POST",
+            url: "/Community/BuyPhoto",
+            contentType: "application/json",
+            dataType: "json",
+            data: JSON.stringify({ 'PhotoOrAtlasId': PhotoOrAtlasId, 'OrdersType': OrdersType, 'Price': Price, 'SellerId': SellerId }),
+            success: function (jsonResult) {
+                alert("购买成功！");
+            }
+        });
+        console.log("失败");
+    }
+</script>
+<div>
+  
+    <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
+        <span style="margin-left: 10px;font-size: : 15px;">图集交易列表</span>
+        <span style="float: right;margin-right: 5px;">
+            <a href="javascript:location.replace(location.href);"><i class="iconfont">&#xe607</i></a>
+        </span>
+    </div>
+
+    <div class="newadd">
+        <button onclick="add()" class="add-btn" target="_blank">新建售卖图集</button>
+    </div>
+    @foreach (var item in Model.DateList)
+    {
+        <div class="image-main">
+            <div class="introduce">
+                <span>@item.Titile</span>
+            </div>
+            <div class="image-left">
+                <img src="@item.ShowUrl" alt="">
+            </div>
+            <div class="image-right">
+                <span>
+                    @item.Detail
+                </span>
+            </div>
+            <div class="sale-img">
+                <span>价格： @item.Price 元</span>
+                <span class="sale-btn  " onclick="BuyPhoto(@item.Id, 2, @item.Price,  @item.UserId )">购买</span>
+            </div>
+        </div>
+    }
+</div>
+
+

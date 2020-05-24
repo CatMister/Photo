@@ -1,0 +1,64 @@
+﻿
+@{
+    Layout = null;
+}
+@model long
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加图集图片</title>
+    <style>
+        input[type=text] {
+            width: 200px;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            height: 35px;
+            outline: none;
+            border-radius: 4%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Community/AddSellPhotoList" method="post" enctype="multipart/form-data">
+        <table align="center">
+            <tr>
+                <td><a href="javascript:" onclick="cloneThis(this)">[+]</a>添加图片：</td>
+                <td><input type="file" name="goods_album"></td>
+
+            </tr>
+            <tr align="center">
+                <input type="hidden" name="id" value="@Model" />
+                <td colspan="2"><input type="submit" value="提交" /></td>
+            </tr>
+        </table>
+
+    </form>
+    <script src="~/css/Photo/js/jquery-1.11.0.min.js"></script>
+    @*<script src="http://code.jquery.com/jquery-latest.js"></script>*@
+    <script>
+        cloneThis = function (obj) {
+            var curr_div = $(obj).parent().parent();
+            if ($(obj).html() == '[+]') {
+                var new_div = curr_div.clone();
+                new_div.find('a').html('[-]');
+                curr_div.after(new_div);
+            } else {
+                curr_div.remove();
+            }
+        }
+    </script>
+</body>
+</html>

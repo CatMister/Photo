@@ -1,0 +1,9 @@
+D:\huxing\HuxingMvc\SqlSugar\bin\Release\netstandard2.0\SqlSugar.deps.json
+D:\huxing\HuxingMvc\SqlSugar\bin\Release\netstandard2.0\SqlSugar.dll
+D:\huxing\HuxingMvc\SqlSugar\bin\Release\netstandard2.0\SqlSugar.pdb
+D:\huxing\HuxingMvc\SqlSugar\obj\Release\netstandard2.0\SqlSugar.csprojAssemblyReference.cache
+D:\huxing\HuxingMvc\SqlSugar\obj\Release\netstandard2.0\SqlSugar.csproj.CoreCompileInputs.cache
+D:\huxing\HuxingMvc\SqlSugar\obj\Release\netstandard2.0\SqlSugar.AssemblyInfoInputs.cache
+D:\huxing\HuxingMvc\SqlSugar\obj\Release\netstandard2.0\SqlSugar.AssemblyInfo.cs
+D:\huxing\HuxingMvc\SqlSugar\obj\Release\netstandard2.0\SqlSugar.dll
+D:\huxing\HuxingMvc\SqlSugar\obj\Release\netstandard2.0\SqlSugar.pdb

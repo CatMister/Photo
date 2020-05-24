@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "GetNewsList";
+    Layout = "~/Views/Shared/Community.cshtml";
+}
+@model HuxingModel.PageReturnModel<HuxingModel.Community.NewsModel>
+    <link rel="stylesheet" href="~/iconfont/iconfont.css">
+    <link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+    <style>
+       
+
+        .add-btn {
+            position: absolute;
+            width: 113px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            background-color: rgb(52,54,58);
+            color: #fff;
+            outline: none;
+            margin-top: 10px;
+        }
+    </style>
+
+<div>
+    <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
+        <span style="margin-left: 10px;font-size:  15px;">图文列表</span>
+        <span style="float: right;margin-right: 5px;">
+            <a href="javascript:location.replace(location.href);"><i class="iconfont">&#xe607</i></a>
+        </span>
+    </div>
+    <div class="newadd">
+        <a href="AddNews" class="add-btn" target="_blank">添加图文</a>
+    </div>
+
+
+    <div class="new-mian">
+        @foreach (var item in Model.DateList)
+        {
+            <div class="image-main" onclick="NewsDetail">
+                <div class="introduce">
+                    <span>@item.Titie</span>
+                </div>
+                <div class="image-left">
+                    <img src=@item.Url alt="">
+                </div>
+                <div class="image-right">
+                    <span>
+                        @item.Summary
+                    </span>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>
+
+

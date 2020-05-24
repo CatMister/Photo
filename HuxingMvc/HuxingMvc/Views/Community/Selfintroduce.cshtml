@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewData["Title"] = "个人简介";
+    Layout = "~/Views/Shared/Community.cshtml";
+}
+@model HuxingModel.User.UserModel
+<div style="background-color: rgb(246,246,246)">
+    <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
+        <span style="margin-left:10px;font-size: : 15px;">个人简介</span>
+    </div>
+    <div class="self-main">
+        <div class="header-img">
+
+            @if (string.IsNullOrEmpty(Model.HeadUrl))
+            {
+                <img src="~/photo/defaultHead.jpg" alt="" width="200px" height="200px">
+            }
+            else
+            {
+                <img src="@Model.HeadUrl" alt="" width="200px" height="200px">
+            }
+        </div>
+        <div class="information">
+            <span class="first-span">姓名：@Model.NickName</span>
+            <span>性别：@Model.SixString</span>
+            <span>积分：@Model.Integral</span>
+        </div>
+        <div class="introduce">
+
+            @if (string.IsNullOrEmpty(Model.Description))
+            {
+                <span> 这里没有任何的简介  </span>
+            }
+            else
+            {
+                <span> @Model.Description </span>
+            }
+           <a class="btn btn-default" href="/Community/UpdateUser" role="button">修改</a>
+            @*<button onclick="UpdateUser()">修改</button>*@
+        </div>
+
+    </div>
+</div>
+

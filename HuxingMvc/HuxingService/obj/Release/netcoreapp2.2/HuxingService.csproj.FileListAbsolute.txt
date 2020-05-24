@@ -1,0 +1,16 @@
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingService.deps.json
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingService.dll
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingService.pdb
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingEntity.dll
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingModel.dll
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\SqlSugar.dll
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingEntity.pdb
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\HuxingModel.pdb
+D:\huxing\HuxingMvc\HuxingService\bin\Release\netcoreapp2.2\SqlSugar.pdb
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.csprojAssemblyReference.cache
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.csproj.CoreCompileInputs.cache
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.AssemblyInfoInputs.cache
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.AssemblyInfo.cs
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.csproj.CopyComplete
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.dll
+D:\huxing\HuxingMvc\HuxingService\obj\Release\netcoreapp2.2\HuxingService.pdb

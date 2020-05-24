@@ -1,0 +1,90 @@
+﻿@{
+    Layout = null;
+}
+@model string
+@{
+    ViewData["Title"] = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/auth.css">
+</head>
+
+<body>
+    <div class="lowin">
+        <div class="lowin-brand">
+            <img src="~/photo/kodinger.jpg" alt="logo">
+        </div>
+        <div class="lowin-wrapper">
+            <div class="lowin-box lowin-login">
+                <div class="lowin-box-inner">
+                    <form>
+                        <div class="lowin-group">
+                            <label>用户名</label>
+                            <input type="text" autocomplete="UserName" name="UserName" class="lowin-input">
+                        </div>
+                        <div class="lowin-group password-group">
+                            <label>密码 <a href="#" class="forgot-link">忘记密码</a></label>
+                            <input type="password" name="Password" autocomplete="current-password" class="lowin-input">
+                        </div>
+                        <button class="lowin-btn login-btn">
+                            登陆
+                        </button>
+
+                        <div class="text-foot">
+                            您还没有账户？<a href="" class="register-link">注册</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="lowin-box lowin-register">
+                <div class="lowin-box-inner">
+                    <form action="/Login/Registered">
+                        <p>创建你的账户</p>
+                        <div class="lowin-group">
+                            <label>用户名</label>
+                            <input type="text" name="UserName" autocomplete="UserName" class="lowin-input" required="required" maxlength="50">
+                        </div>
+                        <div class="lowin-group">
+                            <label>电话</label>
+                            <input type="tel" autocomplete="Phone" name="Phone" class="lowin-input" required="required" maxlength="50">
+                        </div>
+                        <div class="lowin-group">
+                            <label>昵称</label>
+                            <input type="tel" autocomplete="NickName" name="NickName" class="lowin-input" required="required" maxlength="50">
+                        </div>
+                        <div class="lowin-group">
+                            <label>密码</label>
+                            <input type="password" name="Password" autocomplete="current-password" class="lowin-input" required="required" maxlength="50">
+                        </div>
+                        <input class="lowin-btn" type="submit" value="注册">
+
+                        <div class="text-foot">
+                            已经存在一个账户？ <a class="login-link">登录</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="lowin-footer">
+            图图交易
+        </footer>
+    </div>
+
+    <script src="~/js/auth.js"></script>
+    <script>
+        Auth.init({
+            login_url: '/Login/Login',
+            forgot_url: '#forgot'
+        });
+
+
+    </script>
+</body>
+</html>

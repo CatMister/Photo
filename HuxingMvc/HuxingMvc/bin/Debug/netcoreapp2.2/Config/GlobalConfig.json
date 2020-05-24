@@ -1,0 +1,11 @@
+{
+  "DataBaseConfig": {
+
+    "PhotoDb": "data source=localhost;database=photo; uid=root;pwd=123456;"
+  },
+  "SystemConfig": {
+    "FileExtension": [ ".bmp", ".dib", ".rle", ".emf", ".gif", ".jpg", ".jpeg", ".jpe", ".jif", ".pcx", ".dcx", ".pic", ".png", ".tga", ".tif", ".tiffxif", ".wmf", ".jfif" ],
+    "PhotoFileName": "PhotoShow"
+  }
+
+}

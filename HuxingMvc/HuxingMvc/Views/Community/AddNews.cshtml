@@ -1,0 +1,69 @@
+﻿
+
+@{
+    ViewData["Title"] = "添加图文";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <script src="~/ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            CKEDITOR.replace('description');
+        };
+    </script>
+    <style type="text/css">
+        .currentInput {
+            width: 100%;
+            height: 34px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        #newsfrom {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .formcurrentdiv {
+            display: block;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>添加文章</h1>
+    <form method="post" id="newsfrom" action="/Community/AddNews" enctype="multipart/form-data">
+        <div class="formcurrentdiv">
+            标题：<input type="text" class="currentInput" name="Titie" id="Titie" />
+        </div>
+
+        <div class="formcurrentdiv">
+            摘要： <textarea class="form-control" name="Summary" rows="3"></textarea>
+        </div>
+        封面： <input type="file" name="file" />
+        <div class="formcurrentdiv">
+            正文:
+            <textarea name="Content" id="description"></textarea>
+            <input type="submit" />
+        </div>
+    </form>
+</body>
+</html>

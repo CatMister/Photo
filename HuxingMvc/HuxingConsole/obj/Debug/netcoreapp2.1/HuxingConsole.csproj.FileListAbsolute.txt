@@ -1,0 +1,14 @@
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\HuxingConsole.deps.json
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\HuxingConsole.runtimeconfig.json
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\HuxingConsole.runtimeconfig.dev.json
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\HuxingConsole.dll
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\HuxingConsole.pdb
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\SqlSugar.dll
+D:\huxing\HuxingMvc\HuxingConsole\bin\Debug\netcoreapp2.1\SqlSugar.pdb
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.csprojAssemblyReference.cache
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.csproj.CoreCompileInputs.cache
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.AssemblyInfoInputs.cache
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.AssemblyInfo.cs
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.csproj.CopyComplete
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.dll
+D:\huxing\HuxingMvc\HuxingConsole\obj\Debug\netcoreapp2.1\HuxingConsole.pdb

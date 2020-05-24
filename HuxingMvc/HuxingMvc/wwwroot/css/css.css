@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration-line: none;
+    color: #fff;
+}
+
+    a:hover {
+        color: #fff;
+    }
+
+
+.nav {
+    /*position: fixed;*/
+    height: 80px;
+    background: #2e2f34;
+    /*color: white;*/
+    line-height: 80px;
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    left: 36px;
+    top: 0;
+}
+
+.list {
+    position: absolute;
+    left: 224px;
+    top: 0;
+}
+
+    .list .sl {
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+.login-register {
+    position: absolute;
+    right: 36px;
+    top: 0;
+    /*margin-right: 36px;*/
+}
+
+    .login-register .lr {
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+.mid {
+    width: 90%;
+    margin: 8px auto;
+    height: 500px;
+}
+
+    .mid .left {
+        float: left;
+        width: 200px;
+        height: 500px;
+    }
+
+        .mid .left .first-a {
+            margin-top: 100px;
+            margin-bottom: 2px;
+        }
+
+        .mid .left a {
+            margin-bottom: 1px;
+            width: 100%;
+            height: 36px;
+            line-height: 36px;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+            background-color: rgb(49,51,55);
+        }
+
+    .mid .right {
+        float: left;
+        width: 800px;
+        height: 100%;
+    }
+
+
+
+/*image文件内容*/ 
+
+.newadd {
+    margin-left: 20px;
+    background-color: rgb(246,246,246);
+    position: relative;
+    width: 800px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.image-main {
+    border-bottom: 2px dashed #E4E4E4;
+    position: relative;
+    float: left;
+    top: 10px;
+    left: 20px;
+    border: 1px solid rgb(211,211,211);
+    margin-bottom: 10px;
+    /*padding: 0 0 30px 0;*/
+    /*margin: 0 0 30px 0;*/
+    width: 800px;
+}
+
+    .image-main:hover {
+        box-shadow: 0px 0px 1px 0px;
+        /*border: 1px solid blue;*/
+    }
+
+    .image-main .introduce {
+        margin-bottom: 15px;
+    }
+
+        .image-main .introduce span {
+            display: inline-block;
+            margin-left: 60px;
+        }
+
+    .image-main .image-left {
+        margin-left: 30px;
+        float: left;
+        /*margin: 0 20px 0 0;*/
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        width: 240px;
+        /*float: left;
+	clear: both;*/
+    }
+
+        .image-main .image-left img {
+            width: 170px;
+        }
+
+    .image-main .image-right {
+        overflow: hidden;
+        width: 450px;
+        /*display: inline-block;*/
+        /*float: left;*/
+        margin-top: 30px;
+    }
+
+/*index页面*/
+.search-box {
+    position: absolute;
+    right: 236px;
+    top: 0;
+}
+
+    .search-box .search {
+        display: inline-block;
+        width: 323px;
+        height: 25px;
+        line-height: 25px;
+        padding: 7px 15px;
+        border: 0;
+        font-size: 13px;
+        color: #414a60;
+        outline: none;
+    }
+
+        .search-box .search:focus {
+            box-shadow: 0px 0px 10px 0px;
+        }
+
+    .search-box .search-btn {
+        display: inline-block;
+        margin-left: 0px;
+        width: 113px;
+        height: 39px;
+        line-height: 25px;
+        padding: 7px 15px;
+        border: 0;
+        font-size: 18px;
+        background-color: rgb(42,186,101);
+        color: #fff;
+        outline: none;
+    }
+
+.daohan {
+    width: 100%;
+    height: 30px;
+    background-color: : rgb(239,239,239);
+}
+
+
+    .daohan ul, li {
+        list-style: none;
+    }
+
+/*内容区样式*/
+.showcon div {
+    display: none; /*隐藏所有的内容区*/
+    width: 500px;
+    height: 250px;
+    background-color: green;
+    color: red;
+    padding: 10px;
+}
+
+.showcon .content {
+    display: block; /*只显示类为content的div*/
+}
+/*标签区样式*/
+.daohan ul {
+    height: 32px;
+}
+
+.daohan li {
+    float: left;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    border: solid 1px #FFF;
+    color: #fff;
+    background-color: black;
+    padding-left: 5px;
+    cursor: pointer;
+}
+    /*设置类为tab的标签的样式*/
+    .daohan li.tab {
+        border: solid 1px green; /*边框颜色和内容区的颜色一致*/
+        background-color: green; /*背景颜色和内容区的颜色一致*/
+    }
+
+.img-show {
+    width: 90%;
+    margin: 0px auto;
+    /*height: 500px;*/
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    /*text-align: center;*/
+    justify-content: center;
+    /*justify-content: flex-start;*/
+}
+
+
+
+    .img-show .item {
+        flex-grow: 1;
+        width: 250px;
+        height: 350px;
+        border: 1px green solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+/*css代码*/
+.search-box2 {
+    /*width: 50%;*/
+    /*border:1px solid red;*/
+    margin: 10px auto;
+    margin-left: 36px;
+    /*text-align: center;*/
+}
+
+    .search-box2 .search2 {
+        display: inline-block;
+        width: 323px;
+        height: 39px;
+        line-height: 25px;
+        padding: 6px 15px;
+        /*border: 0;*/
+        font-size: 13px;
+        color: #414a60;
+        outline: none;
+    }
+
+    /*.search-box2 .search2:focus{
+	box-shadow: 0px 0px 5px 0px;
+}*/
+
+    .search-box2 .search-btn2 {
+        display: inline-block;
+        margin-left: 0px;
+        width: 113px;
+        height: 39px;
+        line-height: 25px;
+        padding: 7px 15px;
+        border: 0;
+        font-size: 18px;
+        background-color: rgb(42,186,101);
+        color: #fff;
+        outline: none;
+    }
+
+
+.self-main {
+    width: 800px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /*border: 1px solid red;*/
+    border: 1px solid rgb(211,211,211);
+}
+
+    .self-main .header-img {
+        margin-left: 100px;
+        margin-top: 50px;
+        float: left;
+        width: 200px;
+        height: 200px;
+        /*background-color: rgb(255,255,255);*/
+        /*border: 1px solid rgb(211,211,211);*/
+    }
+
+    .self-main .information {
+        margin-left: 50px;
+        float: left;
+        width: 300px;
+        height: 300px;
+        /*background-color: rgb(255,255,255);*/
+        /*border: 1px solid rgb(211,211,211);*/
+        /*text-align: center;*/
+    }
+
+        .self-main .information .first-span {
+            margin-top: 50px;
+        }
+
+        .self-main .information span {
+            display: block;
+            margin: 15px;
+            margin-left: 70px;
+        }
+
+    .self-main .introduce {
+        float: left;
+        width: 600px;
+        margin-left: 100px;
+        /*margin:0px auto;*/
+        height: 200px;
+        /*background-color: rgb(255,255,255);*/
+        /*border: 1px solid rgb(211,211,211);*/
+    }
+
+/*出售图片*/
+.sale-img {
+    /*width: 100%;*/
+    height: 60px;
+    margin-top: 30px;
+    margin-left: 630px;
+}
+
+    .sale-img span {
+        margin: 10px;
+    }
+
+    .sale-img .sale-btn {
+        display: inline-block;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 17px;
+        background-color: rgb(250,0,0);
+        color: #fff;
+    }
+
+        .sale-img .sale-btn:hover {
+            box-shadow: 0px 0px 2px 0px;
+            cursor: pointer;
+        }
+
+/*动态部分*/
+.dongtai {
+    width: 800px;
+    float: left;
+    margin-top: 20px;
+    border: 1px solid rgb(211,211,211);
+}
+
+    .dongtai .fabu {
+        width: 600px;
+        height: 100px;
+        border: 1px solid red;
+    }
+
+    .dongtai .dongtai-header-img {
+        float: left;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        /*line-height: 100px;*/
+    }
+
+        .dongtai .dongtai-header-img img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 25px;
+        }
+
+    .dongtai .dongtai-information {
+        float: left;
+        width: 600px;
+        height: 100px;
+        position: relative;
+        /*line-height: 100px;*/
+    }
+
+    .dongtai .dongtai-content {
+        float: left;
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    .dongtai .dongtai-caozuo {
+        float: left;
+        height: 30px;
+        width: 100%;
+        line-height: 30px;
+        /*border-bottom: 1px solid rgb(211,211,211);*/
+    }
+
+        .dongtai .dongtai-caozuo span {
+            width: 50px;
+            height: 30px;
+            font-size: 14px;
+            margin: 5px;
+        }
+
+        .dongtai .dongtai-caozuo .span1 {
+            margin-left: 500px;
+        }

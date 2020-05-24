@@ -1,0 +1,14 @@
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\bin\Debug\netcoreapp2.2\HuxingRepositroy.deps.json
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\bin\Debug\netcoreapp2.2\HuxingRepositroy.dll
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\bin\Debug\netcoreapp2.2\HuxingRepositroy.pdb
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.csprojAssemblyReference.cache
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.csproj.CoreCompileInputs.cache
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.AssemblyInfoInputs.cache
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.AssemblyInfo.cs
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.dll
+C:\Users\猫先生\source\repos\PhotoHuxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.pdb
+D:\huxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.csproj.CoreCompileInputs.cache
+D:\huxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.AssemblyInfoInputs.cache
+D:\huxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.AssemblyInfo.cs
+D:\huxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.dll
+D:\huxing\HuxingMvc\HuxingRepositroy\obj\Debug\netcoreapp2.2\HuxingRepositroy.pdb

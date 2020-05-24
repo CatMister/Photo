@@ -1,0 +1,15 @@
+﻿@model HuxingModel.Community.NewsModel
+
+
+<h1 style="text-align:center">@Model.Titie</h1>
+@Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.Content))
+
+@Model.UserName
+@Model.UpdateTime.ToString("yyyyMMddd")
+关注此作者
+
+
+
+
+
+

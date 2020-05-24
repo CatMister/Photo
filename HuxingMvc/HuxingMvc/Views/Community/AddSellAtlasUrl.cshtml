@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>>新建图集交易信息</title>
+    <style>
+        input[type=text] {
+            width: 200px;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        input[type=text] {
+            width: 200px;
+            height: 35px;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        input[type=submit] {
+            width: 100px;
+            height: 35px;
+            outline: none;
+            border-radius: 4%;
+        }
+    </style>
+</head>
+<body>
+    <form action="/Community/AddSellAtlas" method="post" enctype="multipart/form-data">
+        <table align="center">
+            <tr>
+                <td>标题：</td>
+                <td><input type="text" name="Titile" placeholder="图集标题"></td>
+            </tr>
+            <tr>
+                <td>描述：</td>
+                <td><input type="text" name="Detail" placeholder="图集描述" /></td>
+            </tr>
+            <tr>
+                <td>价格：</td>
+                <td><input type="text" name="Price" placeholder="图集描述" /></td>
+            </tr>
+            <tr>
+                <td>图集封面：</td>
+                <td><input type="file" name="file" /></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="submit" value="提交" /></td>
+            </tr>
+        </table>
+
+    </form>
+    <script src="~/css/Photo/js/jquery-1.11.0.min.js"></script>
+    @*<script src="http://code.jquery.com/jquery-latest.js"></script>*@
+    <script src="~/layer/layer.js" charset="utf-8"></script>
+    <script>
+        function addimgs(id) {
+            //event.preventDefault();
+            layer.open({
+                type: 2,
+                title: '添加图集图片',
+                shadeClose: true,
+                shade: 0.3,
+                offset: "20%",
+                shadeClose: false,
+                area: ['600px', '300px'],
+                content: 'AddPhotoToSellAtlasUrl?id=' + id//传入一个链接地址 比如：http://www.baidu.com
+            });
+        }
+    </script>
+</body>
+</html>
+

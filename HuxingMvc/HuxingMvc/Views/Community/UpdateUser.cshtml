@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewData["Title"] = "更新用户";
+    Layout = "~/Views/Shared/Community.cshtml";
+}
+<link rel="stylesheet" href="~/iconfont/iconfont.css">
+<link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+<style>
+    #filePicker input
+			{
+				display: none;
+			}
+
+</style>
+@model HuxingModel.User.UserModel
+<div style="background-color: rgb(246,246,246)">
+    <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
+        <span style="margin-left:10px;font-size: 15px;">@ViewData["Title"]</span>
+    </div>
+    <div class="self-main">
+        <form action="/Login/UpdateUser" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">昵称：</label>
+                <input type="text" class="form-control textinput" placeholder="NickName" name="NickName" value="@Model.NickName">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">电话：</label>
+                <input type="text" class="form-control textinput" placeholder="Phone" name="Phone" value="@Model.Phone">
+            </div>
+            <label for="exampleInputFile">头像：</label><br />
+            @if (!string.IsNullOrEmpty(Model.HeadUrl))
+            {
+                <img style="width:100px" id="headUrl" src="@Model.HeadUrl" alt="..." class="img-thumbnail HeadUrl">
+            }
+            else
+            {
+                <img style="width:100px" id="headUrl" src="/photo/defaultHead.jpg" alt="..." class="img-thumbnail HeadUrl">
+            }
+        <div class="input-group">
+            <a class="btn btn-default"   id="filePicker" role="button">更新头像</a>
+            <input name="HeadUrl" type='hidden' id="filetwo" />
+        </div>
+            <label class="radio-inline">
+                @if (Model.Six)
+                {
+                    <input type="radio" name="Six" value="true"  checked="checked"><span>男</span>
+                }
+                else
+                {
+                    <input type="radio" name="Six" value="true"><span>男</span>
+                }
+
+            </label>
+            <label class="radio-inline">
+                @if (!Model.Six)
+                {
+                    <input type="radio" name="Six" value="false"  checked="checked"><span>女</span>
+                }
+                else
+                {
+                    <input type="radio" name="Six" value="false"><span>女</span>
+                }
+            </label><br>
+            <button type="submit" class="btn btn-default">保存</button>
+        </form>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" src="~/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript">
+    var uploader = WebUploader.create({
+        //选择文件后，立即上传
+        auto: true,
+        //引入一个插件文件
+        swf: './webuploader/0.1.5/Uploader.swf',
+
+        // 用于处理上传文件的页面。
+        server: "/Config/Upload",
+
+        // 选择文件的按钮。可选。
+        // 把id=filePicker 元素制作成上传按钮
+        pick: '#filePicker',
+
+        // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+        resize: false,
+        // 只允许选择图片文件。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/*'
+        }
+    });
+
+    //用于上传成功后，处理操作；
+    uploader.on('uploadSuccess', function (file, data) {
+        //data数据就是服务器端返回的json数据
+        //alert(data.goods_ori);fileList
+        //创建一个img标签
+        console.log(data.url);
+
+
+        $("#headUrl").attr('src', data.url);
+        //$("#filetwo").html(input);
+        $("#filetwo").val(data.url);
+        // $("#goods_img").val(data.goods_img);
+        // $("#goods_thumb").val(data.goods_thumb);
+        //layer.msg('上传完成', { icon: 6, time: 1000 });
+
+    });
+</script>
+

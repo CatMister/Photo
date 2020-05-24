@@ -1,0 +1,9 @@
+D:\huxing\HuxingMvc\HuxingModel\bin\Release\netcoreapp2.2\HuxingModel.deps.json
+D:\huxing\HuxingMvc\HuxingModel\bin\Release\netcoreapp2.2\HuxingModel.dll
+D:\huxing\HuxingMvc\HuxingModel\bin\Release\netcoreapp2.2\HuxingModel.pdb
+D:\huxing\HuxingMvc\HuxingModel\obj\Release\netcoreapp2.2\HuxingModel.csprojAssemblyReference.cache
+D:\huxing\HuxingMvc\HuxingModel\obj\Release\netcoreapp2.2\HuxingModel.csproj.CoreCompileInputs.cache
+D:\huxing\HuxingMvc\HuxingModel\obj\Release\netcoreapp2.2\HuxingModel.AssemblyInfoInputs.cache
+D:\huxing\HuxingMvc\HuxingModel\obj\Release\netcoreapp2.2\HuxingModel.AssemblyInfo.cs
+D:\huxing\HuxingMvc\HuxingModel\obj\Release\netcoreapp2.2\HuxingModel.dll
+D:\huxing\HuxingMvc\HuxingModel\obj\Release\netcoreapp2.2\HuxingModel.pdb

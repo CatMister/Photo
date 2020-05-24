@@ -1,0 +1,6 @@
+D:\huxing\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\HuxingTool.deps.json
+D:\huxing\HuxingMvc\HuxingTool\bin\Debug\netcoreapp2.2\HuxingTool.dll
+D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csprojAssemblyReference.cache
+D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.csproj.CoreCompileInputs.cache
+D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.AssemblyInfoInputs.cache
+D:\huxing\HuxingMvc\HuxingTool\obj\Debug\netcoreapp2.2\HuxingTool.AssemblyInfo.cs

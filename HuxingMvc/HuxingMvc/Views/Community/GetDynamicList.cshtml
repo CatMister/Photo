@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewData["Title"] = "动态";
+    Layout = "~/Views/Shared/Community.cshtml";
+}
+@model HuxingModel.PageReturnModel<HuxingModel.Community.DynamicModel>
+<link rel="stylesheet" href="~/css/DynamicList/DynamicList.css" />
+<link rel="stylesheet" href="~/iconfont/iconfont.css">
+<link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+
+
+<div style="background-color: rgb(246,246,246)">
+    <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
+        <span style="margin-left:10px;font-size:  15px;">个人简介</span>
+    </div>
+    <div class="dynamicList-main">
+        <div width="fabiao" style="float: left;margin-top: 10px;">
+            <div style="border:1px solid rgb(211,211,211);height: 110px;">
+                <form action="/Community/AddDynaimic" method="post">
+                    <div class="input-group">
+                        <input name="Context" type="text" class="form-control input-lg" style="width:520px; height:70px;">
+                        <div style="width:50px " id="filePicker"><i class="iconfont" style="font-size: 30px;">&#xe64e</i></div>
+                        <input name="Url" type='hidden' id="filetwo" />
+                    </div>
+                    <input type="submit" style="height: 40px; width: 50px;position:relative;top:-44px;left:471px;" value="发布">
+                </form>
+            </div>
+            <div style="margin-top: 25px;" id="fileList">
+            </div>
+
+        </div>
+        @foreach (var item in Model.DateList)
+        {
+            <div class="dongtai">
+
+                <div class="dongtai-header-img">
+                    @if (string.IsNullOrEmpty(item.HeadUrl))
+                    {
+                        <img src="~/photo/111.jpg" alt="">
+                    }
+                    else
+                    {
+                        <img src="@item.HeadUrl" alt="">
+                    }
+
+                </div>
+                <div class="dongtai-information">
+                    <div style=" position:absolute;  top:40%">
+                        <span>@item.UserName</span><br>
+                        <span>@item.CreateTime.ToString("yyyy-MM-dd HH:mm:ss")</span>
+                    </div>
+                </div>
+                <div class="dongtai-content">
+                    <span>
+                        @item.Context
+                    </span>
+                    @if (!string.IsNullOrEmpty(item.Url))
+                    {
+                        <br />
+                        <img src="@item.Url" style="width:200px" alt="">
+                    }
+                </div>
+                <div class="dongtai-caozuo">
+                    <span class="span1"><i class="iconfont" style="color: red">&#xe505;</i> @item.GoodNum</span>
+                    <span><i class="iconfont" style="color: red">&#xe61e;</i>@item.ViewingNum</span>
+                </div>
+                <div style="width: 90%;margin-top: 10px; margin-left: 40px;float: left;border: 1px solid rgb(211,211,211)">
+
+                </div>
+                @foreach (var models in item.ReplyList)
+                {
+                    <div class="pinglun" style="float: left;margin-top: 10px;margin-bottom: 10px;">
+                        <div style="width: 50px;height: 50px;margin-left: 50px;margin-top: 20px;float: left;">
+
+                            @if (string.IsNullOrEmpty(item.HeadUrl))
+                            {
+                                <img src="~/photo/111.jpg" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
+                            }
+                            else
+                            {
+                                <img src="@models.HeadUrl" alt="" width="50px;" height="50px;" style="border-radius: 50%;">
+                            }
+                        </div>
+                        <div style="width:650px;float: left;margin-top: 20px;margin-left: 15px;font-size: 14px;">
+                            <span style="margin: 3px;">名字：@models.NickName</span>
+                            <span style="margin: 3px;">评论内容:@models.Content</span><br>
+                            <span style="margin: 3px;">@models.CreateTime.ToString("yyyy-MM-dd HH:mm:ss")</span>
+                        </div>
+
+                    </div>
+                }
+
+
+                <form action="AddReply">
+                    <div style="float: left;margin-top: 10px;margin-bottom: 10px;margin-left: 50px;">
+                        <input name="Content" type="text" style="width:400px;height: 40px;">
+                        <input name="ReplyId" value="1" type="hidden" />
+                        <input type="submit" style="width:70px;height: 40px;" value="发表">
+                    </div>
+                </form>
+
+
+            </div>
+
+        }
+    </div>
+</div>
+
+<script type="text/javascript" src="~/webuploader/0.1.5/webuploader.min.js"></script>
+<script type="text/javascript">
+    var uploader = WebUploader.create({
+        //选择文件后，立即上传
+        auto: true,
+        //引入一个插件文件
+        swf: './webuploader/0.1.5/Uploader.swf',
+
+        // 用于处理上传文件的页面。
+        server: "/Config/Upload",
+
+        // 选择文件的按钮。可选。
+        // 把id=filePicker 元素制作成上传按钮
+        pick: '#filePicker',
+
+        // 不压缩image, 默认如果是jpeg，文件上传前会压缩一把再上传！
+        resize: false,
+        // 只允许选择图片文件。
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/*'
+        }
+    });
+
+    //用于上传成功后，处理操作；
+    uploader.on('uploadSuccess', function (file, data) {
+        //data数据就是服务器端返回的json数据
+        //alert(data.goods_ori);fileList
+        //创建一个img标签
+        var imgs = "<img width='150' src='" + data.url + "'/>";
+        var input = "";
+        $("#fileList").html(imgs);//把img图片嵌入到 div里面；
+        //$("#filetwo").html(input);
+        $("#filetwo").val(data.url);
+        // $("#goods_img").val(data.goods_img);
+        // $("#goods_thumb").val(data.goods_thumb);
+        //layer.msg('上传完成', { icon: 6, time: 1000 });
+
+    });
+</script>
+
+
