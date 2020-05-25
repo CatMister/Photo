@@ -8,5 +8,8 @@ namespace HuxingModel.Community
     public class GetPhotoModel: PageInfoModel
     {
         public bool IsMyself { get; set; }
+
+
+        public string Like { get; set; }
     }
 }
