@@ -261,8 +261,10 @@
         图图交易
     </div>
     <div class="search-box2">
-        <input type="text" class="search2" placeholder="搜索图片">
-        <span class="search-btn2" onclick="Search()">搜索</span>
+        <form action="OutMain" method="post">
+            <input type="text" id="seachphoto" class="search2" name="Like" placeholder="搜索图片">
+            <input class="search-btn2" type="submit">搜索
+        </form>
     </div>
     <div class="daohan">
         <ul>
@@ -273,11 +275,6 @@
 
     @RenderBody()
 
-    <script>
-        function Search() {
-            location.replace(location.href);
-        }
-    </script>
 </body>
 </html>
 
