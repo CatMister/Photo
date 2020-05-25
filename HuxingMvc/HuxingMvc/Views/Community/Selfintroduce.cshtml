@@ -4,11 +4,11 @@
     Layout = "~/Views/Shared/Community.cshtml";
 }
 @model HuxingModel.User.UserModel
-<div style="background-color: rgb(246,246,246)">
+<div>
     <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
-        <span style="margin-left:10px;font-size: : 15px;">个人简介</span>
+        <span style="margin-left:10px;font-size: 15px;">个人简介</span>
     </div>
-    <div class="self-main">
+    <div class="self-main" style="background-color: rgb(246,246,246);">
         <div class="header-img">
 
             @if (string.IsNullOrEmpty(Model.HeadUrl))

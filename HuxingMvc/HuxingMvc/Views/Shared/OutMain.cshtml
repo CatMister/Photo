@@ -233,7 +233,7 @@
         }
     </script>
 </head>
-<body>
+<body style=" background-image:url(/photo/background.jpg); background-size:1300px 740px;">
     <div class="nav">
         <div class="icon">
             <a href="/Community/Selfintroduce" target="show">图图交易</a>
@@ -262,7 +262,7 @@
     </div>
     <div class="search-box2">
         <input type="text" class="search2" placeholder="搜索图片">
-        <span class="search-btn2">搜索</span>
+        <span class="search-btn2" onclick="Search()">搜索</span>
     </div>
     <div class="daohan">
         <ul>
@@ -273,7 +273,11 @@
 
     @RenderBody()
 
-
+    <script>
+        function Search() {
+            location.replace(location.href);
+        }
+    </script>
 </body>
 </html>
 
