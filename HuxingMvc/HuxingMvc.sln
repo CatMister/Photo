@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuxingMvc", "HuxingMvc\HuxingMvc.csproj", "{87A29B8A-C8A7-47BF-A5CE-C26F12998206}"
 EndProject
@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlSugar", "SqlSugar\SqlSug
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuxingTool", "HuxingTool\HuxingTool.csproj", "{A23083CC-D7B2-4E34-A026-1A8B47076D83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuxingTest", "HuxingTest\HuxingTest.csproj", "{5CF221B5-921B-4946-A568-0206A3C54982}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuxingTest", "HuxingTest\HuxingTest.csproj", "{5CF221B5-921B-4946-A568-0206A3C54982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,15 +4,15 @@
 }
 @model HuxingModel.PageReturnModel<HuxingModel.Community.PhotoModel>
 
-    <link rel="stylesheet" type="text/css" href="~/css/Photo/css/default.css">
-    <link rel="stylesheet" type="text/css" href="~/css/Photo/css/GetPhoto.css">
+<link rel="stylesheet" type="text/css" href="~/css/Photo/css/default.css">
+<link rel="stylesheet" type="text/css" href="~/css/Photo/css/GetPhoto.css">
 
 
-    <script src="~/css/Photo/js/Photo.js" type="text/javascript"></script>
-    <script src="~/layer/layer.js" charset="utf-8"></script>
+<script src="~/css/Photo/js/Photo.js" type="text/javascript"></script>
+<script src="~/layer/layer.js" charset="utf-8"></script>
 
-    <link rel="stylesheet" href="~/iconfont/iconfont.css">
-    <link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+<link rel="stylesheet" href="~/iconfont/iconfont.css">
+<link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
 
 <div>
     <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
@@ -22,20 +22,22 @@
         </span>
     </div>
     <div class="search-box2">
-        <input type="text" id="seachphoto" class="search2" placeholder="搜索图片">
-        <span class="search-btn2" onclick="Search()">搜索</span>
+        <form action="GetPhoto" method="post">
+            <input type="text" id="seachphoto" class="search2" name="Like" placeholder="搜索图片">
+            <input class="search-btn2" type="submit">搜索
+        </form>
         <span onclick="Add()" class="add-btn">上传图片</span>
     </div>
     <div id="gallery-wrapper">
         @foreach (var item in Model.DateList)
         {
-           
-                <div class="white-panel">
-                    <img src="@item.Url" class="thumb">
-                    <h1 style="font-size: 14px;color: black;">@item.Name</h1>
-                    <p style="font-size: 12px;color: black;">@item.Detail</p>
-                </div>
-          
+
+            <div class="white-panel">
+                <img src="@item.Url" class="thumb">
+                <h1 style="font-size: 14px;color: black;">@item.Name</h1>
+                <p style="font-size: 12px;color: black;">@item.Detail</p>
+            </div>
+
         }
     </div>
     <script>
@@ -52,9 +54,7 @@
                 content: 'AddPhotoUrl'
             });
         }
-        function Search() {
-            location.replace(location.href);
-        }
+
 
         $(document).ready(function () {
             $.each($('.daohan li'), function (i, val) {
