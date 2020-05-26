@@ -73,14 +73,17 @@ namespace HuxingMvc.Contorller
             return View();
         }
         [AllowAnonymous]
-        public IActionResult NewList()
+        public IActionResult NewList(GetNewsModel input )
         {
-            return View(PhotoService.GetNewsList(UserId, new GetNewsModel()));
+
+            input = input ?? new GetNewsModel();
+            return View(PhotoService.GetNewsList(UserId, input));
         }
         [AllowAnonymous]
-        public IActionResult PhotoList()
+        public IActionResult PhotoList(GetPhotoModel input)
         {
-            return View(PhotoService.GetPhoto(UserId, new GetPhotoModel()));
+            input = input ?? new GetPhotoModel();
+            return View(PhotoService.GetPhoto(UserId, input));
         }
 
         public IActionResult AddShellPhotoUrl()
