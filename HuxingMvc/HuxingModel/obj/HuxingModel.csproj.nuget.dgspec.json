@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {}
+    "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
+    "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
+        "projectUniqueName": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
         "projectName": "HuxingModel",
-        "projectPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Source\\Repos\\CatMister\\Photo\\HuxingMvc\\HuxingModel\\obj\\",
+        "projectPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\HuxingModel.csproj",
+        "packagesPath": "C:\\Users\\小武\\.nuget\\packages\\",
+        "outputPath": "C:\\Task\\Photo\\HuxingMvc\\HuxingModel\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\小武\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -55,7 +60,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
