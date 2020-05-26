@@ -4,25 +4,25 @@
     Layout = "~/Views/Shared/Community.cshtml";
 }
 @model HuxingModel.PageReturnModel<HuxingModel.Community.NewsModel>
-    <link rel="stylesheet" href="~/iconfont/iconfont.css">
-    <link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
-    <style>
-       
+<link rel="stylesheet" href="~/iconfont/iconfont.css">
+<link rel="stylesheet" href="~/iconfont2/iconfont2/iconfont.css">
+<style>
 
-        .add-btn {
-            position: absolute;
-            left:687px;
-            width: 113px;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-            font-size: 18px;
-            background-color: rgb(52,54,58);
-            color: #fff;
-            outline: none;
-            margin-top: 10px;
-        }
-    </style>
+
+    .add-btn {
+        position: absolute;
+        left: 687px;
+        width: 113px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        background-color: rgb(52,54,58);
+        color: #fff;
+        outline: none;
+        margin-top: 10px;
+    }
+</style>
 
 <div>
     <div style="width: 800px;height: 40px;background-color: rgb(52,54,58);color:white;line-height: 40px;margin-left: 20px;margin-top: 100px;">
@@ -39,19 +39,24 @@
     <div class="new-mian">
         @foreach (var item in Model.DateList)
         {
+
+
             <div class="image-main" onclick="NewsDetail" style="background-color: rgb(246,246,246);">
                 <div class="introduce">
                     <span>@item.Titie</span>
                 </div>
-                <div class="image-left">
-                    <img src=@item.Url alt="">
-                </div>
+                <a href="/Community/GetNewsDetail?Id=@item.Id">
+                    <div class="image-left">
+                        <img src=@item.Url alt="">
+                    </div>
+                </a>
                 <div class="image-right">
                     <span>
                         @item.Summary
                     </span>
                 </div>
             </div>
+
         }
 
     </div>

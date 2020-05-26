@@ -73,13 +73,13 @@ namespace HuxingMvc.Contorller
             return View();
         }
         [AllowAnonymous]
-        public IActionResult NewList(GetNewsModel input )
+        public IActionResult NewList(GetNewsModel input)
         {
 
             input = input ?? new GetNewsModel();
             ViewBag.SearchValue = @"\Community\NewList";
             return View(PhotoService.GetNewsList(UserId, input));
-           
+
         }
         [AllowAnonymous]
         public IActionResult PhotoList(GetPhotoModel input)
@@ -178,9 +178,10 @@ namespace HuxingMvc.Contorller
         /// 获取用户关注
         /// </summary>
         /// <returns></returns>
-        public void UpdateUserAttention(long AttentionUserId)
+        [HttpPost]
+        public void UpdateUserAttention([FromBody]UpdateUserAttention input)
         {
-            LoginService.UpdateUserAttention(UserId, AttentionUserId, false);
+            LoginService.UpdateUserAttention(UserId, input.AttentionUserId, input.IsAttention);
         }
         #endregion
 
@@ -332,6 +333,7 @@ namespace HuxingMvc.Contorller
         /// 获取图文详情
         /// </summary>
         /// <param name="input"></param>
+        [AllowAnonymous]
         public IActionResult GetNewsDetail(EntityDto<long> input)
         {
             return View(PhotoService.GetNewsDetail(UserId, input));
