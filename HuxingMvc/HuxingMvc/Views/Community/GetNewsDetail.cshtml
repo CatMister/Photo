@@ -1,14 +1,49 @@
-﻿@model HuxingModel.Community.NewsModel
+﻿@{
+    Layout = null;
+}
+@model HuxingModel.Community.NewsModel
 
 
-<h1 style="text-align:center">@Model.Titie</h1>
-@Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.Content))
-
-@Model.UserName
-@Model.UpdateTime.ToString("yyyyMMddd")
-关注此作者
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>@Model.Titie</title>
+    <script src="~/css/Photo/js/jquery-1.11.0.min.js"></script>
+    <script>
+        function UpdateUserAttention(userId) {
+           
+            $.ajax({
+                type: "POST",
+                url: "/Community/UpdateUserAttention",
+                contentType: "application/json",
+                dataType: "json",
+                data: JSON.stringify({ 'AttentionUserId': userId, 'IsAttention': true }),
+                success: function (jsonResult) {
+                    alert("关注成功！");
+                    $("#Attention").text("已经关注");
+                }
+            });
+
+        }
+    </script>
+</head>
+<body>
+
+    <h1 style="text-align:center">@Model.Titie</h1>
+
+    @Html.Raw(System.Web.HttpUtility.HtmlDecode(Model.Content))
+    <br>
+
+    @Model.UserName
+    <br>
+    @Model.UpdateTime.ToString("yyyyMMddd")
+    <br>
+    <button id="Attention" onclick="UpdateUserAttention(@Model.UserId)">关注此作者</button>
+</body>
+</html>
 
 
 

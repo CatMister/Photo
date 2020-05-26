@@ -370,7 +370,7 @@ namespace HuxingService.Community.Impl
                 Url = input.Url,
                 Summary = input.Summary,
                 Content = input.Content,
-                UserId = input.UserId,
+                UserId = userId,
                 CreateTime = currentTime,
                 UpdateTime = currentTime
             };

@@ -146,8 +146,8 @@ namespace HuxingService.Login
                 {
                     entity = new UserAndAttentionEntity()
                     {
-                        UserId = entity.UserId,
-                        AttentionUserId = entity.AttentionUserId,
+                        UserId = userId,
+                        AttentionUserId = attentionUserId,
                         CreateTime = DateTime.Now,
                         UpdateTime = DateTime.Now
                     };
