@@ -569,6 +569,33 @@ namespace HuxingService.Community.Impl
             }
             return result;
         }
+
+        public PageReturnModel<PhotoModel> OutMain(long userId, GetPhotoModel input)
+        {
+            var result = new List<PhotoModel>();
+            var total = 0;
+            var entityList = DbContext.Queryable<PhotoEntity>()
+                .WhereIF(input.IsMyself && userId == 0, c => c.UserId == userId).
+                WhereIF(!string.IsNullOrEmpty(input.Like), c => c.Name.Contains(input.Like) || c.Detail.Contains(input.Like))
+                .Select(c => new PhotoModel()
+                {
+                    Name = c.Name,
+                    Url = c.Url,
+                    Id = c.Id,
+                    Detail = c.Detail,
+                    UserId = c.UserId
+                }).ToPageList(input.PageIndex, input.PageSize, ref total);
+            var entityIdList = entityList.Select(c => c.Id).ToList();
+            var IsGoodList = DbContext.Queryable<UserAndPhotoEntity>().Where(c => c.IsGood && c.UserId == userId && entityIdList.Contains(c.PhotoId)).Select(c => c.PhotoId).ToList();
+            var replyList = GetReplyList(entityIdList, ReplyOfType.Photo, userId);
+            foreach (var item in entityList)
+            {
+                item.IsGood = IsGoodList.Any(c => c == item.Id);
+                item.IsMyself = item.UserId == userId;
+                item.ReplyList = replyList.Where(c => c.Id == item.Id).OrderBy(c => c.CreateTime).ToList();
+            }
+            return new PageReturnModel<PhotoModel>() { TotalNum = total, DateList = entityList };
+        }
         #endregion
 
     }

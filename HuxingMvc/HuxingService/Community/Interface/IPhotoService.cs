@@ -34,6 +34,8 @@ namespace HuxingService.Community
         /// <returns></returns>
         PageReturnModel<PhotoModel> GetPhoto(long userId, GetPhotoModel input);
 
+        PageReturnModel<PhotoModel> OutMain(long userId, GetPhotoModel input);
+
         /// <summary>
         /// 获取图片详情
         /// </summary>

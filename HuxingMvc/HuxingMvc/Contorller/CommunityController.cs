@@ -86,6 +86,11 @@ namespace HuxingMvc.Contorller
             return View(PhotoService.GetPhoto(UserId, input));
         }
 
+        public IActionResult OutMain()
+        {
+            return View(PhotoService.OutMain(UserId, new GetPhotoModel()));
+        }
+
         public IActionResult AddShellPhotoUrl()
         {
 
@@ -209,7 +214,10 @@ namespace HuxingMvc.Contorller
             return View(PhotoService.GetPhoto(UserId, input));
         }
 
-
+        public IActionResult OutMain(GetPhotoModel input)
+        {
+            return View(PhotoService.OutMain(UserId, input));
+        }
 
         /// <summary>
         /// 获取图片详情

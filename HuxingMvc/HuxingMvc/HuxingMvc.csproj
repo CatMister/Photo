@@ -43,7 +43,6 @@
   <ItemGroup>
     <Folder Include="Concat\" />
     <Folder Include="Views\Order\" />
-    <Folder Include="wwwroot\photo\" />
   </ItemGroup>
 
 </Project>

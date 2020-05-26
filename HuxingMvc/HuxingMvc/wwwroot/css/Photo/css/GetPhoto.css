@@ -138,7 +138,7 @@ a {
         left: 323px;
         width: 113px;
         height: 40px;
-        line-height: 40px;
+        /*line-height: 40px;*/
         text-align: center;
         font-size: 18px;
         background-color: rgb(52,54,58);
@@ -184,7 +184,7 @@ a {
     height: 30px;
     margin-top: 100px;
     margin-left: 36px;
-    background-color: : rgb(239,239,239);
+    background-color:  rgb(239,239,239);
 }
 
 
