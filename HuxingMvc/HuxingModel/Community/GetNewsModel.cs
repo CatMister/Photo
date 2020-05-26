@@ -8,5 +8,10 @@ namespace HuxingModel.Community
     public class GetNewsModel : PageInfoModel
     {
         public bool IsMyself { get; set; }
+
+
+        public string Like { get; set; }
+
+
     }
 }

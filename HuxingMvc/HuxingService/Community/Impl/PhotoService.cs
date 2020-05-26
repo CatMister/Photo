@@ -89,7 +89,7 @@ namespace HuxingService.Community.Impl
             var result = new List<PhotoModel>();
             var total = 0;
             var entityList = DbContext.Queryable<PhotoEntity>()
-                .WhereIF(input.IsMyself && userId == 0, c => c.UserId == userId).
+                .WhereIF(input.IsMyself && userId != 0, c => c.UserId == userId).
                 WhereIF(!string.IsNullOrEmpty(input.Like), c => c.Name.Contains(input.Like) || c.Detail.Contains(input.Like))
                 .Select(c => new PhotoModel()
                 {
@@ -313,6 +313,7 @@ namespace HuxingService.Community.Impl
             var total = 0;
             var entityList = DbContext.Queryable<NewsEntity>()
                 .WhereIF(input.IsMyself, c => c.UserId == userId)
+                .WhereIF(!string.IsNullOrEmpty(input.Like), c => c.Summary.Contains(input.Like) || c.Content.Contains(input.Like) || c.Titie.Contains(input.Like))
                 .Select(c => new NewsModel()
                 {
                     Id = c.Id,

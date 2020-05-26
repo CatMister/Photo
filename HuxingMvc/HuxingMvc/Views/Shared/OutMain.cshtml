@@ -233,7 +233,7 @@
         }
     </script>
 </head>
-<body style=" background-image:url(/photo/background.jpg); background-size:1300px 740px;">
+<body>
     <div class="nav">
         <div class="icon">
             <a href="/Community/Selfintroduce" target="show">图图交易</a>
@@ -260,12 +260,13 @@
     <div class="tutu">
         图图交易
     </div>
-    <div class="search-box2">
-        <form action="OutMain" method="post">
-            <input type="text" id="seachphoto" class="search2" name="Like" placeholder="搜索图片">
+    <form action="@ViewBag.SearchValue" method="get">
+        <div class="search-box2">
+            <input type="text" class="search2"  name="Like" placeholder="搜索图片">
             <input class="search-btn2" type="submit">搜索
-        </form>
-    </div>
+        </div>
+    </form>
+
     <div class="daohan">
         <ul>
             <li>@Html.ActionLink("图片", "PhotoList", "Community")</li>
@@ -274,6 +275,7 @@
     </div>
 
     @RenderBody()
+
 
 </body>
 </html>
