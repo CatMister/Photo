@@ -77,12 +77,15 @@ namespace HuxingMvc.Contorller
         {
 
             input = input ?? new GetNewsModel();
+            ViewBag.SearchValue = @"\Community\NewList";
             return View(PhotoService.GetNewsList(UserId, input));
+           
         }
         [AllowAnonymous]
         public IActionResult PhotoList(GetPhotoModel input)
         {
             input = input ?? new GetPhotoModel();
+            ViewBag.SearchValue = @"\Community\PhotoList";
             return View(PhotoService.GetPhoto(UserId, input));
         }
 
